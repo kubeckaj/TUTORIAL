@@ -1,0 +1,48 @@
+COMMAND: JKQC -help
+COMMAND: JKQC db.pkl -el
+COMMAND: JKQC db.pkl -b -el -sort el
+COMMAND: JKQC db.pkl -b -el -sort el -cut -694.034
+COMMAND: JKQC db.pkl -b -el -sort el -cut el -694.034
+COMMAND: JKQC db.pkl -b -el -sort el -uniq rg,el
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el,rg
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el,rgÃ0.1
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el,rg1
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el1,rg1
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el1,rg1 -noname
+COMMAND: JKQC db.pkl -b -el -sort el -uniq el1,rg1 -noname -noex
+COMMAND: JKQC db.pkl -b -el -sort el -arbalign 0.3
+COMMAND: JKQC db.pkl -b -el -sort el â€“sample 8 rg,el
+COMMAND: JKQC db.pkl -b -el -sort el â€-sample 8 rg,el
+COMMAND: JKQC db.pkl -b -el -sort el â-sample 8 rg,el
+COMMAND: JKQC db.pkl -b -el -sort el -sample 8 rg,el
+COMMAND: JKQC db.pkl -extract limonene_acy_TS_91 -b -rg
+COMMAND: JKQC db.pkl -extract limonene_acy_TS_91 -b -rg -fullname
+COMMAND: JKQC db.pkl -b
+COMMAND: JKQC db.pkl -b -index 0:4
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -presplit 4
+COMMAND: JKQC db.pkl -b -index 0:4 -presplit 4
+COMMAND: JKQC -seed
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle -seed 32
+COMMAND: JKQC db.pkl -b -index 0:4 -shuffle -seed 33
+COMMAND: JKQC db.pkl -b -preshuffle -index 0:4
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b
+COMMAND: JKQC db.pkl -b -preshuffle -noname
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b -preshuffle
+COMMAND: JKQC db.pkl -b -preshuffle -seed 33
+COMMAND: JKQC db.pkl -b -preshuffle -seed 33 -index 0:4
+COMMAND: JKQC db.pkl -b -preshuffle -seed 24 -index 0:4

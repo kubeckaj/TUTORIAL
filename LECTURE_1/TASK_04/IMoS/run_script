@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --partition=small
+#SBATCH --nodes=1                 # number of nodes to use
+#SBATCH --ntasks-per-node=40      # tasks per node (aka MPI processes)
+#SBATCH --account=hvehkama        # insert here the project to be billed
+#SBATCH --time=06:00:00           # time as hh:mm:ss
+#SBATCH --mem-per-cpu=100M  
+
+/projappl/hvehkama/ineefjes/IMoS/run_IMoS110L64.sh /appl/soft/math/matlab/runtime/r2020a/v98/
+
+#grep "The average collision" slurm-*.out | awk '{print $15}' > K.txt
+
+#paste B.txt K.txt > B_K.txt
+
+#awk '{if (NR==1) {ave=$2*$3;prev=$1}}{if (NR>1) {if ($1==prev) {ave=ave+$2*$3} else {print prev, ave;ave=$2*$3; prev=$1}}}END{print prev, ave}' B_K.txt > B_K_ave.txt

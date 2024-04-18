@@ -1,0 +1,183 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Access the Module package system
+source /com/bin/modules.sh
+
+# User specific aliases and functions
+
+# Enable Environment modules
+source /com/bin/modules.sh
+
+# If not running interactively, don't do anything
+#[ -z "$PS1" ] && return
+
+# don't put duplicate lines in the history. See bash(1) for more options
+# don't overwrite GNU Midnight Commander's setting of `ignorespace'.
+export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
+# ... or force ignoredups and ignorespace
+export HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# make less more friendly for non-text input files, see lesspipe(1)
+#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
+
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+force_color_prompt=yes
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+        # We have color support; assume it's compliant with Ecma-48
+        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+        # a case would tend to support setf rather than setaf.)
+        color_prompt=yes
+    else
+        color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
+esac
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+#if [ -f ~/.bash_aliases ]; then
+#    . ~/.bash_aliases
+#fi
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+#alias ll='ls -l'
+#alias la='ls -A'
+#alias l='ls -CF'
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+eval "`dircolors -b ~/.dircolorsrc`"
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+#history search
+bind '"\e[A"':history-search-backward > /dev/null 2>&1
+bind '"\e[B"':history-search-forward  > /dev/null 2>&1
+
+function mkcd {
+  if [ ! -n "$1" ]; then
+    echo "Enter a directory name"
+  elif [ -d $1 ]; then
+    echo "\`$1' already exists"
+    cd $1
+  else
+    mkdir $1 && cd $1
+  fi
+}
+
+
+alias ls='ls --color=auto'
+alias rm='\rm'
+
+#mistake prevention
+alias cddir='mkcd'
+alias cdir='mkcd'
+alias dc='cd'
+alias ccd='cd'
+alias cdd='cd'
+alias sl='ls'
+alias lls='ls'
+alias vm='mv'
+
+alias jstat='squeue -u $USER -o "%i %V %M/%l %m %P %C %t %j %Z" | sort -nk 1'
+alias jstta='jstat'
+alias qdel='scancel'
+alias cdut='echo $PWD;cd /home/kubeckaj/Utilities'
+alias cdap='echo $PWD;cd /home/kubeckaj/Applications'
+alias cdjk='echo $PWD;cd /home/kubeckaj/Applications/JKCS2.1'
+alias chem='source /comm/groupstacks/chemistry/bin/modules.sh --silent';
+alias gauss='source /comm/groupstacks/gaussian/bin/modules.sh --silent;module load gaussian16/Rev.B.01';
+alias molden='chem; module load molden; unalias molden; molden'
+
+#GRENDEL MODULES
+source /com/bin/modules.sh
+source /comm/groupstacks/chemistry/bin/modules.sh --silent;
+
+#UTILITIES
+export PATH=$PATH:/home/kubeckaj/Utilities
+
+#XTB/CREST
+export PATH=/home/kubeckaj/Applications/XTB6.4/bin:$PATH #e.g.: "/user/kubeckaj/XTB6.4/bin"
+export XTBHOME=/home/kubeckaj/Applications/XTB6.4        #e.g.: "/user/kubeckaj/XTB6.4"
+export PATH=/home/kubeckaj/Applications/PYTHON/xtb-python/:$PATH
+export PATH=/home/kubeckaj/Applications/crest/:$PATH
+
+#AGOX
+#alias JKagox='module load python/3.9.4; source /home/kubeckaj/Applications/agox/AGOX/bin/activate; alias python=/home/kubeckaj/Applications/agox/AGOX/bin/python3.9'
+###alias JKagox='module load python/3.9.4; conda activate AGOX'
+
+#TRAVIS
+export PATH=/home/kubeckaj/Applications/travis-src-220729/exe:$PATH
+
+#JKCS
+alias JKpython='module load python/3.9.4; source /home/kubeckaj/Applications/JKCS2.1/JKQC/JKCS/bin/activate; alias python=/home/kubeckaj/Applications/JKCS2.1/JKQC/JKCS/bin/python3.9'
+export PATH=/home/kubeckaj/Applications/JKCS2.1/JKCSx:$PATH
+export PATH=/home/kubeckaj/Applications/JKCS2.1/TOOLS/MANIPULATE:$PATH

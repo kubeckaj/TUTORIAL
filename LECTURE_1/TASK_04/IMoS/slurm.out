@@ -1,0 +1,84 @@
+------------------------------------------
+Setting up environment variables
+---
+LD_LIBRARY_PATH is .:/appl/soft/math/matlab/runtime/r2020a/v98//runtime/glnxa64:/appl/soft/math/matlab/runtime/r2020a/v98//bin/glnxa64:/appl/soft/math/matlab/runtime/r2020a/v98//sys/os/glnxa64:/appl/soft/math/matlab/runtime/r2020a/v98//sys/opengl/lib/glnxa64
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_9_823 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_9_823 is 156.8154 A^2 and the Mobility is 1.479  cm^2/Vs.
+Time taken is a mere 554.5002 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_5_462 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_5_462 is 160.075 A^2 and the Mobility is 1.4489  cm^2/Vs.
+Time taken is a mere 503.0113 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_11_554 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_11_554 is 153.6663 A^2 and the Mobility is 1.5093  cm^2/Vs.
+Time taken is a mere 581.5053 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_1_40 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_1_40 is 153.227 A^2 and the Mobility is 1.5136  cm^2/Vs.
+Time taken is a mere 523.9446 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_9_500 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_9_500 is 154.4951 A^2 and the Mobility is 1.5012  cm^2/Vs.
+Time taken is a mere 553.6939 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_15_385 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_15_385 is 158.0523 A^2 and the Mobility is 1.4674  cm^2/Vs.
+Time taken is a mere 597.4537 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_8_341 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_8_341 is 159.1784 A^2 and the Mobility is 1.457  cm^2/Vs.
+Time taken is a mere 520.4121 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_8_253 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_8_253 is 155.5975 A^2 and the Mobility is 1.4906  cm^2/Vs.
+Time taken is a mere 538.6654 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_5_989 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_5_989 is 153.7597 A^2 and the Mobility is 1.5084  cm^2/Vs.
+Time taken is a mere 509.0453 seconds 
+You have selected imos.xlsx as your file and 1C106OOH1NO3-11_14_403 as your molecule. You can start a calculation process.       
+  The method Used is: Trajectory Method
+The method Used is: TMLJ 4-6-12 with qpol for N2
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+Total charge does not agree with sum of partial charges
+The average collision cross section for 1C106OOH1NO3-11_14_403 is 153.7457 A^2 and the Mobility is 1.5085  cm^2/Vs.
+Time taken is a mere 533.7727 seconds 

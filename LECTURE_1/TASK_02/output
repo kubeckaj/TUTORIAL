@@ -1,0 +1,16 @@
+COMMAND: JKQC -help
+COMMAND: JKQC -b -el -g
+COMMAND: JKQC -folder . -out db.pkl
+COMMAND: JKQC db.p√kl -ct -mass -g -formation -unit
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius
+COMMAND: JKQC db.pkl -ct -mass -g -formation -unit -radius -rg

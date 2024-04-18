@@ -1,0 +1,25 @@
+excelfile    Savefile    Gas
+./imos.xlsx  ./imos.txt  N2
+
+interface 0 0
+fromvalue 1
+tovalue 10
+Mgas 28
+radgas 1.5
+Polarizability 1.7
+Pressure 101325
+Temperature 298.15
+
+NgastotalTM 3000000
+Acommodation 0
+reemvel 1
+
+TM 1
+
+LennardJones 1
+qpol 1
+TDHSS 0
+
+seed 13
+Numthreads 7
+Repeatseed 1
