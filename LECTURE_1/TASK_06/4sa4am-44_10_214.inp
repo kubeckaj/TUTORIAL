@@ -1,0 +1,6 @@
+! B97-3c ENGRAD
+%pal nprocs 1
+    end
+%Maxcore 3000.00
+* xyzfile 0 1 4sa4am-44_10_214.xyz
+  

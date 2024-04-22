@@ -1,0 +1,6 @@
+COMMAND: JKCS3_run -p CREST -rf org.xyz -nf CS -m "--gfn 2 --noreftopo" -cpu 1 -par q64 
+JKCS3_run: CREST calculations will be performed.
+JKCS3_run: Performing calculations/Calculations submitted or calculation done (-loc).
+COMMAND: JKCS3_run -p CREST -rf org.xyz -nf CS8 -m "--gfn 2 --noreftopo --T 8" -cpu 8 -par q64 
+JKCS3_run: CREST calculations will be performed.
+JKCS3_run: Performing calculations/Calculations submitted or calculation done (-loc).

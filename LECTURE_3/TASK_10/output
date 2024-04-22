@@ -1,0 +1,7 @@
+COMMAND: JKCS1_prepare 
+JKCS1_prepare: File /home/georgbt/Pyruvic_acid/ABC_geom_surfaces/NaCl_W/slabs_1000_gen/1slab_3w_slab_6_6_2/slab_B97-3c/calc-LM/slab.xyz specified in input input.txt was not found. [EXITING]]
+COMMAND: JKCS1_prepare 
+JKCS1_prepare: Folder SYS_1slab_3w has been prepared.
+JKCS1_prepare: DONE :-) --> Total number of cluster types: 1
+JKCS1_prepare: DONE :-) --> Total number of monomeric combinations: 1
+JKCS1_prepare: Now, just run JKCS2_explore.

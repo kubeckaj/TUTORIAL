@@ -1,0 +1,61 @@
+------------FREE ENERGY CALCULATIONS ON THE ENTIRE SYSTEM------------
+
+1) JKCS0_copy XYZ aq
+
+2) vi input.txt (modify the composition in the input.txt file by adding the entry of the .xyz file of the slab manually)
+
+3) sh create_slab.sh
+
+4) JKCS1_prepare
+
+5) cd SYS_1slab_3w
+
+6) cp ../slab.xyz .
+
+7) cp ../comps.xyz .
+
+8) JKCS2_explore -abcxtb -gen 100 -components comps.txt -cpu 2 -time 2-00:00:00 -par qany -repeat 10
+
+9) JKCS3_run -p XTB -of ABC_XTB -nf system_XTB -m "--gfn 1 --ohess -T 1" -par qany -cpu 2 -mem 40GB -time 3-00:00:00 -maxtasks 10
+
+10) JKCS4_collect system_XTB -oc -cpu 1 -time 1-00:00:00
+
+11) JKQC collectionsystem_XTB.pkl -ePKL -b -el -sort g -uniq rg,g,dip -noex -noname -out uniq_XTB.pkl > uniq_XTB.dat
+
+12) JKCS3_run -p ORCA -rf uniq_XTB.dat -nf system_B97-3c -m "! B97-3c" -par qany -cpu 4 -time 1-00:00:00 -maxtasks 1000
+
+13) JKCS4_collect system_B97-3c -oc -cpu 1 -time 1-00:00:00 -orca
+
+14) JKQC uniq_XTB.pkl -addSP collectionsystem_B97-3c.pkl -out XTB_B97-3c_correction.pkl
+ 
+------------FREE ENERGY CALCULATIONS ON THE SLAB COMPONENT OF THE SYSTEM ONLY------------
+
+1) cd SYS_1slab_3w_slab_#_#_2
+
+2) JKQC -pXYZ slab.xyz > todo_XTB_slab.txt
+
+3) JKCS3_run -p XTB -rf todo_XTB_slab.txt -nf slab_XTB -m "--gfn 1 --opt" -par qany
+
+4) JKQC -pXYZ slab_XTB/calc-LM/*xyz > todo_B97-3c_slab.txt
+
+5) JKCS3_run -p ORCA -rf todo_B97-3c_slab.txt -nf slab_B97-3c -m "! B97-3c" -par qany
+
+------------FREE ENERGY CALCULATIONS ON THE WATER COMPONENT OF THE SYSTEM ONLY------------
+
+1) vi input.txt (modify the composition in the input.txt file by deleting the entry of the .xyz file of the slab manually)
+
+2) JKCS1_prepare
+
+3) cd SYS_1w
+
+4) cp ../w.xyz .
+
+5) JKCS2_explore -abcxtb -gen 1 -cpu 2 -time 5:00 -par qany
+
+6) JKQC -pXYZ ABC_XTB/ABC_XTB_1_3/calc-LM/*xyz > todo_XTB_water.txt
+
+7) JKCS3_run -p XTB -rf todo_XTB -nf water_XTB -m "-gfn 1 --opt" -par qany
+
+8) JKQC -pXYZ water_XTB/calc-LM/w.xyz > todo_B97-3c_water.txt
+
+9) JKCS3_run -p ORCA -rf todo_B97-3c_slab.txt -nf slab_B97-3c -m "! B97-3c" -par qany

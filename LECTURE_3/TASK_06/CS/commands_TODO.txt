@@ -1,0 +1,1 @@
+source ~/.JKCSusersetup.txt;cd /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_06/CS/calc-LM/; program_CREST /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_06/org.xyz;

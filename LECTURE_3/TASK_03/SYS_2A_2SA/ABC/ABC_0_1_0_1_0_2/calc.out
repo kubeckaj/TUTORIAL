@@ -1,0 +1,126 @@
+                                                      
+       * * * * * * * * * * * * * * * * * *            
+      *       ____   _____ _           _   *          
+     *  /\   |  _ \ / ____| |         | |  * * * * *  
+    *  /  \  | |_) | |    | |_   _ ___| |_ ___ _ __  *
+   *  / /\ \ |  _ <| |    | | | | / __| __/ _ \ '__| *
+  *  / ____ \| |_) | |____| | |_| \__ \ ||  __/ |  *  
+  * /_/    \_\____/ \_____|_|\__,_|___/\__\___|_|  *  
+  *                                                *  
+  * * * * * * * * * * * * * * * * * * * * * * * * *   
+                                                      
+
+rigidmol 3.2
+Specific flag:  official version
+Platform:       LINUX/UNIX
+Compiled by:    zhangjun@SZBL-Precision-7920-Tower
+Compiling date: Apr  6 2024 09:19:20
+C++ compiler:   g++ (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+C++ options:    -O2 -Os -fno-exceptions --std=c++11 -fopenmp -static-libstdc++ -static-libgcc  -static -Wl,--whole-archive -lpthread -Wl,--no-whole-archive  
+
+Contributors:
+Jun Zhang(Shenzhen Bay Laboratory): Design and coding.
+
+For any suggestions, comments, and questions on the theory and
+implementation of rigidmol, please feel free to contact:
+
+Dr. Jun Zhang, zhangjun@szbl.ac.cn
+
+If you used this program in your work, please cite these references:
+
+[1] Zhang, J.; Dolg, M.; ABCluster: The Artificial Bee Colony Algorithm for
+    Cluster Global Optimization. Phys. Chem. Chem. Phys. 2015, 17, 24173-24181.
+[2] Zhang, J.; Dolg, M.; Global Optimization of Clusters of Rigid Molecules by the
+    Artificial Bee Colony Algorithm. Phys. Chem. Chem. Phys. 2016, 18, 3003-3010.
+
+Program starts at Thu Apr 18 12:02:48 2024.
+Command line: " /home/kubeckaj/Applications/ABCluster-3.3pre-Linux//rigidmol calc.inp "
+Process ID:   2704950
+Run by:       kubeckaj@s51n10.grendel.cscaa.dk
+Available CPU cores:    64
+Read "OMP_NUM_THREADS": 1
+
+Random number testing (integers): 370389762...504995070
+Random number testing (fractals): 0.38309861...0.57810846
+
+ -- Input/Output Parameters --
+Input file name:      calc.inp
+Cluster file name:    calc.cluster
+Result file name:     calc.(cluster/xyz/gjf)
+Temporary file name:  abclusterkubeckajs51n10.grendel.cscaa.dk2704950-OPT
+# of saved LMs:       3
+LMs are stored in:    calc-LM
+
+ -- ABC Control Parameters --
+Population size:                   30
+Maximal generation:                30
+Scout limit:                        4
+Amplitude:                11.00000000
+
+ -- Cluster Components: from [ calc.cluster ] --
+ -----------------------------------------------------------
+   Source                                       #
+ -----------------------------------------------------------
+   /home/kubeckaj/Applications/JKCS2.1/JKCSx/../TOOLS/STRUCTURES/JACOB/h2so4_cis.xyz     1
+   /home/kubeckaj/Applications/JKCS2.1/JKCSx/../TOOLS/STRUCTURES/ABC/so4.xyz     1
+   /home/kubeckaj/Applications/JKCS2.1/JKCSx/../TOOLS/STRUCTURES/ABC/nh4.xyz     2
+ -----------------------------------------------------------
+   External electric field:        0.000000 Volt/Angstrom
+ -----------------------------------------------------------
+
+Artificial Bee Colony Optimization Starts!
+----------------------------------------------------------------------------------
+ * Population: 30; Maximal cycles: 30
+ * EM = Employed Bee; Trigonometric mutation
+ * OL = Onlooker Bee; ABC/best/2(0.5)+ABC/current/2(0.5);
+        Tournament selection from 5 nectars.
+ * SC = Scout Bee; Random nectar; Limit = 4
+----------------------------------------------------------------------------------
+    #       Diversity            maxE            minE    byEM    byOL    bySC
+----------------------------------------------------------------------------------
+    1     37.63324207  -1406.81025611  -1583.78574825      17       0       0
+    2      5.92019122  -1562.34452791  -1583.78574899      14       0       0
+    3      5.49384461  -1562.34452791  -1583.78574899       7       1       0
+    4      4.74419611  -1562.34452791  -1583.78574906       3       0       0
+    5      2.07522820  -1572.84736125  -1583.78574839       5       0       0
+    6     28.41617505  -1424.61528263  -1583.78574741       5       0       4
+    7    188.64251845   -956.82635292  -1583.78574812       4       0       7
+    8    142.27101193  -1064.15554671  -1583.78574812       8       0      11
+    9     38.98209712  -1402.53792109  -1583.78574853      15       0       5
+   10    125.41994105   -882.30698293  -1583.78574742       8       0       1
+   11     59.97293814  -1249.08826751  -1583.78574742      10       0       4
+   12      3.68771504  -1568.66662987  -1583.78574742       4       0       1
+   13      7.82246077  -1542.06300652  -1583.78574742       2       0       4
+   14     91.58859274  -1185.80851963  -1583.78574742       5       0       8
+   15     27.18735045  -1431.52999444  -1583.78574806      10       0       6
+   16      5.36535492  -1562.34452843  -1583.78574741       8       0       5
+   17     22.77658131  -1461.47860775  -1583.78574741       2       0       4
+   18    201.67549504   -465.91695948  -1583.78574741       4       0       4
+   19      5.89093842  -1560.00847567  -1583.78574741      10       0       2
+   20     77.60366952  -1190.95103869  -1583.78574741       7       2       5
+   21    169.70177105   -783.34794195  -1583.78574741       7       2       9
+   22    136.58475972   -957.42290930  -1583.78574839       7       0       5
+   23    124.43160202   -891.83560847  -1583.78574839       9       0       2
+   24     45.49467375  -1330.23581253  -1583.78574839       4       0       3
+   25      9.07164366  -1543.31968055  -1583.78574742       9       0       5
+   26      5.61745074  -1562.34452847  -1583.78574839       5       0       7
+   27     58.18651383  -1300.74406467  -1583.78574742      10       1       4
+   28     12.42665650  -1515.48976752  -1583.78574742      10       0       3
+   29    185.36907097   -634.38475769  -1583.78574906       7       0       6
+   30     33.66685711  -1398.56423692  -1583.78574906       6       0       2
+----------------------------------------------------------------------------------
+Artificial Bee Colony Optimization Finished!
+
+ -- Results Report --
+ * 3 LMs will be saved in [ calc-LM ].
+      #          Energy      Match-RMSD
+      0  -1583.78574839      0.00000000
+      1  -1582.68877962      1.63496879
+      2  -1580.98241738      1.59528198
+
+ * Final Global Minimal Energy:  -1583.78574825
+ * The Global Minimum is saved as: [ calc-OPT.(cluster/xyz/gjf) ]
+
+===== (^ _ ^) =====
+Normal termination at Thu Apr 18 12:02:51 2024.
+Total run time: 3 seconds = 0 days 0 hours 0 minutes 3 seconds.
