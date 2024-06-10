@@ -1,4 +1,0 @@
-COMMAND: JKCS2_explore -abcxtb -gen 10 -components comps.txt -cpu 2 -time 10:00:00 -par qany -repeat 3 
-JKCS2_explore: Component file not found.[EXITING]
-COMMAND: JKCS2_explore -abcxtb -gen 10 -components /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_10/SYS_1slab_3w/../comps.txt -cpu 2 -time 10:00:00 -par qany -repeat 3 
-JKCS2_explore: ABCluster parameters set: LM(1200),GEN(10),INIT(1200),SC(4),BOX(11).

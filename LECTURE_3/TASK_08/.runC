@@ -1,1 +1,0 @@
-sh JKsend 'source ~/.JKCSusersetup.txt; PKLinsubfolders=`ls HF/c*.pkl HF/*/c*.pkl HF/*/*/c*.pkl 2>/dev/null | xargs`; program_JKQCpickle $PKLinsubfolders -out collectionHF.pkl >> output; program_JKQCpickle  collectionHF.pkl -ePKL -rg -el >  collectionHF.txt; '

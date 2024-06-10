@@ -1,1 +1,0 @@
-source ~/.JKCSusersetup.txt;cd /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_09/MP2/calc-LM/; program_G16 /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_09/H.xyz;

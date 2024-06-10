@@ -1,1 +1,0 @@
-sbatch -J 'TASK_06' -p q64 --time 10-00:00:00 -N 1 --mem-per-cpu 4000mb --cpus-per-task 1 --ntasks-per-node=8 -n 8 JKsend  'head -n 1 commands_TODO.txt | tail -n 1 | head -n 1 | sh'

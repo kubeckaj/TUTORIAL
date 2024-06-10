@@ -1,2 +1,0 @@
-COMMAND: JKCS2_explore -pop 30 -gen 30 -lm 3 -par q64 -cpu 1 -time 10:00 -exploded  
-JKCS2_explore: ABCluster parameters set: LM(3),GEN(30),INIT(30),SC(4),BOX(11).

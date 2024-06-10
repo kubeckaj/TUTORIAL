@@ -1,1 +1,0 @@
-COMMAND: JKQC -folder ./ -collect xyz -noex -cut rg 50 -out collectionABC.pkl

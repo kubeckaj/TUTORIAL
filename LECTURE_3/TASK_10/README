@@ -1,5 +1,0 @@
-In this folder, I have just collected the input files as well as the Bash script to generate the initial slab for the system with a 6*6*2 slab and with 3 waters.
-
-The commands are assembled in the COMMANDS file and it is (almost) the exact workflow that I employed for the calculations on the entire system, the slab component only, and the water component, respectively.
-
-PS: The commands for the entire system is run with the JKCS manager.

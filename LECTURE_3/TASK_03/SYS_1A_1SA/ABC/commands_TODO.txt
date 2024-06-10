@@ -1,3 +1,0 @@
-cd /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_03/SYS_1A_1SA/ABC/ABC_0_0_1_0_0_1; sh runJKCS2_explore.sh;
-cd /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_03/SYS_1A_1SA/ABC/ABC_0_1_0_0_1_0; sh runJKCS2_explore.sh;
-cd /home/kubeckaj/TUTORIAL/LECTURE_3/TASK_03/SYS_1A_1SA/ABC/ABC_1_0_0_0_1_0; sh runJKCS2_explore.sh;

@@ -1,8 +1,0 @@
-method="--gfn 2 --noreftopo --T 8"
-CHARGE=0
-MULTIPLICITY=1
-MEMORY=4000mb
-PARTITION=q64
-NODES=1
-TIME=10-00:00:00
-CPU=8
