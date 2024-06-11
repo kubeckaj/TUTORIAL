@@ -1,0 +1,12 @@
+#sequence of typical commands for JKCS (Jammy Key for Configuration Sampling) 
+JKCS1_prepare
+JKCS2_explore -pop 300 -gen 200 -lm 1000 -JKQC
+JKCS3_run -JKQC                
+JKCS4_collect XTB -dip -JKQC           
+JKCS5_filter resultsXTB.dat -c3 4 -rgm 3 -dm 3.5 -sm 80
+JKCS3_run -p G16 -rf XTB -nf DFT_opt  -m "# wb97xd 6-31++g** opt=verytight int=ultrafine gfinput IOP(6/7=1)"
+JKCS4_collect DFT_opt       
+JKCS5_filter resultsDFT_opt.dat -dm 1.7
+JKCS3_run -p G16 -rf DFT_opt -nf DFT_freq -m "# wb97xd 6-31++g** freq gfinput IOP(6/7=1)"
+JKCS4_collect DFT_freq -gibbsh
+JKCS5_filter  resultsDFT_freq.dat -c2 4 -d 1 

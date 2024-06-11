@@ -1,0 +1,8 @@
+method="--gfn 1 --sp"
+CHARGE=0
+MULTIPLICITY=2
+MEMORY=4000mb
+PARTITION=qtest
+NODES=1
+TIME=5:00
+CPU=1

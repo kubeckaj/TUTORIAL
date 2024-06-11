@@ -1,0 +1,1 @@
+sbatch --array=1-3 -J 'SYS_1slab_3w' -p qany --time 10:00:00 -N 1 --mem-per-cpu 4000mb --cpus-per-task 1 --ntasks-per-node=2 -n 2 JKsend 'tail -n ${SLURM_ARRAY_TASK_ID} commands_TODO.txt | head -n 1 | sh'
